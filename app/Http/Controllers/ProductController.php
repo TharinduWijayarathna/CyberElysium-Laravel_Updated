@@ -42,7 +42,7 @@ class ProductController extends Controller
 
     public function edit($id)
     {
-        $product = Product::find($id);
+        $product = ProductFacade::find($id);
         return view('layouts.admin.update-product', compact('product'));
     }
 
