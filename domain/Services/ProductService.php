@@ -102,4 +102,10 @@ class ProductService
 
         $product->update();
     }
+
+    public function find($product_id)
+    {
+        $products = $this->product->find($product_id);
+        return $products;
+    }
 }
